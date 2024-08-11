@@ -39,5 +39,19 @@ data2 = pd.DataFrame(
         'Sue': ['Pretty good.', 'Bland.']},
     index=['Product A', 'Product B'])
 
+'''
 
-print(data2)
+Series
+
+A Series, by contrast, is a sequence of data values. If a DataFrame is a table, a Series is a list. And in fact you can create one with nothing more than a list
+
+'''
+se = pd.Series([1, 2, 3, 4, 5])
+
+se2 = pd.Series([30, 35, 40], index=['2015 Sales',
+                '2016 Sales', '2017 Sales'], name='Product A')
+
+customers = pd.read_csv("data/customers-100.csv")
+
+
+print(se2)
